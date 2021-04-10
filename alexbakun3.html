@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Alex Bakun HW#3</title>
+    <meta charset="utf-8">
+
+    <style>
+
+      body {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+
+
+
+.content {
+  grid-area: content;
+  position: relative;
+  background-color: #cb997e
+   
+}
+.fsz9 
+{
+  margin: 1em;
+  justify-content: center;
+  padding-left: 25%;
+}
+.form1 
+{
+  margin: 1em;
+  justify-content: center;
+  padding-left: 30%;
+}
+.fsz7 {
+     margin: 1em;
+  justify-content: center;
+  padding-left: 30%;
+}
+.high1 {
+  color: #1e81b0;
+}
+
+
+.header {
+  grid-area: header;
+  background-color: #6b705c;
+ 
+
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #6b705c;
+ 
+}
+
+.container {
+    width: 80%; 
+    display: grid;
+    margin: 10%; 
+    grid-gap: .1em;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+    "header  header  header"
+    "content content content"
+    "footer  footer  footer";
+    background-color: #fff;
+   /* color: #444;
+    align-items: center; */
+  }
+
+
+.box {
+ /* background-color: #ddbea9; */
+  color: #fff;
+  /*border-radius: 5px;*/
+  padding: 5%;
+  font-size: 120%;
+   font-family: 'Roboto', sans-serif;
+    
+
+}
+
+/* p {margin:  3%;
+
+} */
+
+.header,
+.footer {
+background-color: #6b705c;
+}
+
+  a  {color: #cdcdde;}
+
+
+
+    </style>
+    </head>
+
+      <body>
+        <div class="container">
+          <div class="box header">
+            <h1 class="fsz9">Music Styles Challenge</h1>
+            <p class="fsz7"> by Alex Bakun</p>
+          </div>
+         <!-- <div  class="box sidebar">
+           
+            <p class="fsz6">MUSIC STYLES HERE</p>
+          </div> -->
+          <div class="box content">
+           <h2 class="fsz9"> Please choose  your favourite band! </h2>
+  <form class="form1">
+    <p>
+    
+
+    <select name="sel1">
+      <optgroup label = "Ukraininan"> <!--Группа №1 -->
+        <option value="oe">Океан Ельзи</option>
+      </optgroup>
+      <optgroup label = "Hip-hop+" disabled> <!--Группа №2 (отключена)-->
+        <option value="2p">2PAC</option>
+        <option value="50c">50 Cent</option>
+      </optgroup>
+      <optgroup label = "My Choice"> <!--Группа №3 -->
+        <option value="cc">Chick Corea</option>
+        <option value="be">Billie Eielish</option>
+        <option value="sp">Snarky Puppy</option>
+      </optgroup>
+    </select>
+    </p>
+    
+      
+
+    
+      <p class="high1"> Special Guest Name
+        <br>
+    <input list = "guestlist" name="gl" required>
+    <datalist id = "guestlist"> 
+      <option value = "Alex"> </option>
+      <option value = "Nastya"> </option>
+      <option value = "Natalia"> </option>
+    </datalist>
+
+    </p>
+
+    <p class="high1">
+       <label for="gst1"> Extra Guests (+1) </label>
+        <input type = "checkbox" id="gst1" name = "chk1" value = "inv"> 
+    </p>
+    <br>
+
+    <input type="reset" value="Start Again!">
+    <input type="submit" value="Ok, let's Go">
+
+  </form>
+
+
+            
+          </div>
+         
+         <!--
+          <div class="box lsidebar">
+            <h3 class="fsz8">Ad (right) Bar</h3>
+            <p class="fsz6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, molestias. 4</p>
+          </div> -->
+
+          <div class="box footer">
+            
+           <p class="fsz9">  &copy; 2021  <a href="http://mediaplan.me"> Mediaplan.Me </a><br> All rights reserved</p>
+              
+          </div>
+        </div>
+      </body>
+    
+  
+
+</html>
+
