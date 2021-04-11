@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `sup`
---
+-- Imaginary MySQL database with some data and relations (see dump in sup_sql.txt) and arbitrary data types All coincudences are random )
 
 -- --------------------------------------------------------
 
